@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Yupeng Wang - PhD student at CUHK MAE working on muscle-driven behavior prediction, super-limb collaboration, surgical robotics, and augmented reality assisted intervention."
+    />
+    <title>Yupeng Wang | Robotics Research</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="site-mark" href="#top" aria-label="Yupeng Wang home">
+        <span>Yupeng Wang</span>
+      </a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#current">Current Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">CUHK MAE PhD Student</p>
+          <h1 id="hero-title">Yupeng Wang</h1>
+          <p class="hero-lede">
+            I study human-like motion generation and muscle-driven control for super-limb collaboration,
+            building on prior work in surgical robotics, AR-assisted intervention, and robot autonomy.
+          </p>
+          <p class="hero-meta">
+            Department of Mechanical and Automation Engineering, The Chinese University of Hong Kong
+            <span aria-hidden="true">/</span>
+            Supervisor: Prof. Darwin Lau
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="mailto:yupengwang@link.cuhk.edu.hk">Email</a>
+            <a class="button" href="#projects">View Projects</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro section-pad" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">Research Profile</p>
+          <h2 id="about-title">Human-centered robotics across interaction, autonomy, and intervention.</h2>
+        </div>
+        <div class="intro-grid">
+          <p>
+            My current PhD research studies how a supernumerary robotic limb can anticipate a user's
+            near-future behavior and coordinate assistance in time, so the human and the extra limb can
+            complete shared tasks naturally.
+          </p>
+          <div class="interest-list" aria-label="Research interests">
+            <span>Human behavior prediction</span>
+            <span>Intent-aware assistance</span>
+            <span>Super-limb collaboration</span>
+            <span>Muscle-driven control</span>
+            <span>AR-assisted surgical robotics</span>
+            <span>Surgical robot teleoperation</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad split-section current-section" id="current" aria-labelledby="current-title">
+        <div class="section-heading">
+          <p class="eyebrow">Current PhD Direction</p>
+          <h2 id="current-title">Behavior prediction and assistive control for human-super-limb collaboration.</h2>
+        </div>
+        <div class="split-layout">
+          <div class="text-stack">
+            <p>
+              The public-facing goal of this work is to make a super-limb collaborate as a proactive
+              partner rather than a passive tool. The system should infer what the user is likely to do
+              next from movement, task context, and muscle-driven cues, then decide when and how the
+              additional limb should help.
+            </p>
+            <p>
+              In a successful interaction, the human keeps agency over the task while the super-limb
+              predicts the next action and completes complementary subtasks such as stabilizing an object,
+              positioning a tool, or preparing the next manipulation step.
+            </p>
+            <dl class="fact-list">
+              <div>
+                <dt>Research focus</dt>
+                <dd>Human behavior prediction, muscle-driven modeling, and intent-aware robot assistance</dd>
+              </div>
+              <div>
+                <dt>Research target</dt>
+                <dd>Predictable, timely, and user-aware collaboration between a person and a super-limb</dd>
+              </div>
+            </dl>
+          </div>
+          <figure class="media-frame">
+            <img
+              src="assets/superlimb-collaboration.png"
+              alt="Concept image of a person collaborating with a predictive super-limb assistant"
+            />
+            <figcaption>Concept visualization of prediction-aware human-super-limb collaboration.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-pad project-band" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Projects</p>
+          <h2 id="projects-title">Previous work in surgical robotics, augmented reality guidance, and robot learning.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="assets/generalized-ar.png" alt="Generalized AR-assisted surgical robot platform overview" />
+            <div class="project-copy">
+              <p class="project-kicker">CUHK Robotics Research</p>
+              <h3>Generalized AR-assisted surgical robot platform</h3>
+              <p>
+                Developed a reusable AR interface for virtual-to-real calibration and robot teleoperation.
+                The platform supports waypoint control, end-effector dragging, single and multiple targets,
+                and multiple tool orientations.
+              </p>
+              <p class="metric">Validated across bone drilling, tracheostomy planning, and ultrasound scanning scenarios.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/deformable-tissue-ar.png" alt="Automatic calibration and dynamic registration workflow for deformable tissue" />
+            <div class="project-copy">
+              <p class="project-kicker">Advanced Intelligent Systems</p>
+              <h3>Automatic virtual-to-real calibration and dynamic registration for ESD</h3>
+              <p>
+                Built an AR-assisted workflow for deformable tissue in endoscopic submucosal dissection.
+                The system combines a SuperGlue-based 6D pose estimator, Metric3D depth filtering,
+                PyBullet simulation, Unity, and HoloLens 2 visualization.
+              </p>
+              <p class="metric">Ex vivo validation: 3.11 +/- 0.56 mm AR calibration error and 3.20 +/- 1.96 mm dynamic registration error.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/esd-trajectory.png" alt="Trajectory prediction examples for ESD circumferential incision" />
+            <div class="project-copy">
+              <p class="project-kicker">2025 IROS Workshop</p>
+              <h3>Shared-control flexible endoscopic robot for semi-autonomous circumferential incision</h3>
+              <p>
+                Proposed a trajectory prediction and execution pipeline for ESD incision, integrating
+                safety margins, geometric trajectory planning, AR gesture control, Unity GUI teleoperation,
+                and automatic trajectory following.
+              </p>
+              <p class="metric">Received Best Workshop Paper Award, Second Prize, at the 2025 IROS Workshop on Continuum Robots for Surgery.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/tracheostomy-ar.png" alt="AR-assisted incision guidance for tracheostomy planning" />
+            <div class="project-copy">
+              <p class="project-kicker">ROBIO 2024 Finalist</p>
+              <h3>Multimodal AR-assisted incision guidance for tracheostomy planning</h3>
+              <p>
+                Integrated ultrasound-derived anatomical information with AR visualization to support
+                cricothyrotomy and tracheostomy incision localization on phantom models.
+              </p>
+              <p class="metric">Reported high localization precision with mean central positioning errors below 0.31 mm in evaluated scenes.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/robotic-drilling.png" alt="Navigational augmented reality workflow for robotic drilling" />
+            <div class="project-copy">
+              <p class="project-kicker">ARSO 2024</p>
+              <h3>Navigational augmented reality for robotic drilling</h3>
+              <p>
+                Built a robot-assisted drilling workflow that combines AR navigation, computer-assisted
+                orthopedic surgery planning, 3D Slicer registration, ROS, MoveIt, and UR5 execution.
+              </p>
+              <p class="metric">Evaluated target placement and robotic drilling on porcine and phantom femur experiments.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/ur-controller-tutorial.png" alt="UR manipulator drawing a sand painting pattern for a design studio project" />
+            <div class="project-copy">
+              <p class="project-kicker">Teaching Assistant</p>
+              <h3>UR controller tutorials for MAE-Architecture robotic design</h3>
+              <p>
+                Supported MAE students and Architecture students in a collaborative robotics studio,
+                helping teams translate personal design concepts into robot-executable tasks using a UR
+                manipulator.
+              </p>
+              <p class="metric">Students designed tasks such as sand painting, carving, and bubble blowing, then implemented them as robot-executed motions.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-pad publication-section" id="publications" aria-labelledby="publications-title">
+        <div class="section-heading">
+          <p class="eyebrow">Publications</p>
+          <h2 id="publications-title">Selected papers and workshop contributions.</h2>
+        </div>
+        <ol class="publication-list">
+          <li>
+            <strong>Y. Wang</strong>, H. Gao, A. Wang, and H. Ren,
+            "Automatic Virtual-to-real Calibration and Dynamic Registration of Deformable Tissue for
+            Endoscopic Submucosal Dissection," <em>Advanced Intelligent Systems</em>.
+          </li>
+          <li>
+            <strong>Y. Wang</strong>, H. Gao, X. Yang, X. Zuo, and H. Ren,
+            "Shared-Control Flexible Endoscopic Robot Enabling Semi-Autonomous Circumferential Incision
+            by Geometric Trajectory Planning with Safety Margins for Endoscopic Submucosal Dissection,"
+            2025 IROS Workshop on Continuum Robots for Surgery.
+          </li>
+          <li>
+            W. Yue, <strong>Y. Wang</strong> (co-first author), S. Chen, H. Gao, and H. Ren,
+            "Multimodal Augmented Reality Assisted Incision Guidance for Preoperative Tracheostomy
+            Planning," <em>ROBIO 2024</em>.
+          </li>
+          <li>
+            H. Ho, <strong>Y. Wang</strong> (co-first author), A. Wang, L. Bai, and H. Ren,
+            "Web-based Augmented Reality with Auto-Scaling and Real-Time Head Tracking towards Markerless
+            Neurointerventional Preoperative Planning and Training of Head-mounted Robotic Needle
+            Insertion," <em>ROBIO 2024</em>.
+          </li>
+          <li>
+            <strong>Y. Wang</strong>, Y. Ma, and H. Ren,
+            "Navigational Augmented Reality for Robotic Drilling," <em>ARSO 2024</em>.
+          </li>
+        </ol>
+      </section>
+
+      <section class="section-pad honor-section" aria-labelledby="honors-title">
+        <div class="section-heading">
+          <p class="eyebrow">Honors</p>
+          <h2 id="honors-title">Awarded for work on semi-autonomous ESD incision.</h2>
+        </div>
+        <div class="honor-layout">
+          <figure class="award-frame">
+            <img src="assets/iros-workshop-award.jpeg" alt="Best Workshop Paper Award certificate from 2025 IROS Workshop" />
+          </figure>
+          <div class="text-stack">
+            <h3>Best Workshop Paper Award, Second Prize</h3>
+            <p>
+              2025 IROS Workshop on Continuum Robots for Surgery, for the work on shared-control flexible
+              endoscopic robot-assisted circumferential incision.
+            </p>
+            <p>
+              Additional academic honors include CUHK M.Sc. Department Admission Scholarship, Dr. Raymond
+              Leung Scholarship, Dean's List, and CUHK(SZ) Dean's List across undergraduate study.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad education-section" aria-labelledby="education-title">
+        <div class="section-heading">
+          <p class="eyebrow">Education</p>
+          <h2 id="education-title">Training across mechanical automation, electronic engineering, and computer engineering.</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>Current</span>
+            <h3>PhD Student<br />Mechanical and Automation Engineering</h3>
+            <p>
+              The Chinese University of Hong Kong<br />
+              Supervisor: Prof. Darwin Lau
+            </p>
+          </article>
+          <article>
+            <span>2023 - 2024</span>
+            <h3>M.Sc.<br />Electronic Engineering</h3>
+            <p>
+              The Chinese University of Hong Kong<br />
+              GPA: 3.75/4.00
+            </p>
+          </article>
+          <article>
+            <span>2019 - 2023</span>
+            <h3>B.Eng.<br />Computer Engineering</h3>
+            <p>
+              The Chinese University of Hong Kong, Shenzhen<br />
+              Major GPA: 3.872/4.00<br />
+              Rank: 3/101
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Let's talk about robotics, AR, and human-centered autonomy.</h2>
+      </div>
+      <div class="footer-actions">
+        <a class="button button-primary" href="mailto:yupengwang@link.cuhk.edu.hk">yupengwang@link.cuhk.edu.hk</a>
+        <a class="button" href="#top">Back to top</a>
+      </div>
+      <p class="copyright">&copy; <span data-year></span> Yupeng Wang.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
